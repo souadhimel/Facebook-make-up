@@ -1,0 +1,121 @@
+/* Common styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+/* Header */
+header {
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(126, 120, 120);
+  padding: 0 20px;
+}
+.search_area {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  width: 70px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.search {
+  height: 40px;
+  width: 240px;
+  border-radius: 25px;
+  background-color: #4d4e50;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+.search span {
+  width: 20px;
+  color: white;
+  font-size: 20px;
+}
+.search input {
+  flex: 1;
+  border: none;
+  outline: none;
+  height: 100%;
+  background-color: unset;
+  color: white;
+  font-size: 13px;
+}
+.search input::placeholder {
+  color: white;
+  font-size: 13px;
+}
+.menu ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu ul li a {
+  padding: 13px 40px;
+  border-radius: 8px;
+  display: inline-block;
+  transition: 0.3s;
+  position: relative;
+}
+
+.menu ul li a:hover {
+  background-color: #4d4e50;
+}
+.menu ul li a::after {
+  content: attr(data-tag);
+  display: none;
+  background: rgb(206, 202, 202);
+  position: absolute;
+  bottom: -33px;
+  left: 50%;
+  text-align: center;
+  color: rgb(29, 24, 24);
+  transform: translateX(-50%);
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+.menu ul li a:hover:after {
+  display: block;
+}
+.menu ul li span {
+  color: white;
+  font-size: 30px;
+}
+.profile_section ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile_section ul li a {
+  padding: 13px 15px;
+  border-radius: 8px;
+  display: inline-block;
+  transition: 0.3s;
+}
+.profile_section ul li a:hover {
+  background-color: #87898a;
+  border-radius: 50%;
+}
+
+.profile_section ul li span {
+  color: white;
+  font-size: 30px;
+}
